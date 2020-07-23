@@ -5,6 +5,23 @@
          version="4.0">
     <display-name>Apache-Axis</display-name>
 
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.servlet.TestServlet</servlet-class>
+        <init-param>
+            <param-name>uName</param-name>
+            <param-value>JeongWoo</param-value>
+        </init-param>
+        <init-param>
+            <param-name>uAge</param-name>
+            <param-value>24</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/ts</url-pattern>
+    </servlet-mapping>
+    <!-- context -->
     <context-param>
         <param-name>imgDir</param-name>
         <param-value>/upload/img</param-value>
@@ -17,6 +34,7 @@
         <param-name>realServerIP</param-name>
         <param-value>xxx.xxx.xxx.xxx</param-value>
     </context-param>
+    <!-- context -->
 
     <!-- init-param은 서블릿이 초기화 될때 정보 저장하면서 공유-->
     <servlet>
