@@ -15,7 +15,7 @@
             String adminId;
             String adminPw;
         %>
-        <!-- 서블릿 초기화 될때 저장된 정모를 get한다.-->
+        <!-- 서블릿 초기화 될때 저장된 정를 get한다. xml파일에 servlet이 초기화될때 parameter를 만들어 놨음-->
         <%
             adminId = config.getInitParameter("adminId");
             adminPw = config.getInitParameter("adminPw");
