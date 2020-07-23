@@ -18,14 +18,14 @@
             String realServerIP;
             String connectedUser;
         %>
-        <!-- application 객체는 해당 프로젝트 전체 -->
+        <!-- application 객체는 해당 프로젝트 전체에서 공유 -->
         <%
             imgDir = application.getInitParameter("imgDir");
             testServerIP = application.getInitParameter("testServerIP");
             realServerIP = application.getInitParameter("realServerIP");
 
             application.setAttribute("connectedUser", "Jeong Woo"); //  setAttribute 메소드로 만들었다.
-            connectedUser = (String)application.getAttribute("connectedUser"); // (String) 해줘야함
+            connectedUser = (String)application.getAttribute("connectedUser"); // (String) 해줘야함!
         %>
         <p>connectedUser : <%= connectedUser%></p>
         <p>imgDir : <%= imgDir%></p>
