@@ -16,8 +16,8 @@
                 response.sendRedirect("loginOk2.jsp");
         %>
         <form action="loginPro" method="post">
-            ID : <input type="text" name="mID"><br>
-            PW : <input type="password" name="mPW"><br>
+            아이디 : <input type="text" name="mID"><br>
+            비밀번호 : <input type="password" name="mPW"><br>
             <input type="submit" value="login">
         </form>
     </body>

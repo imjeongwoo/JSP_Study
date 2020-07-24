@@ -104,4 +104,14 @@
         <extension>wsdl</extension>
         <mime-type>text/xml</mime-type>
     </mime-mapping>
+
+    <!-- filter -->
+    <filter>
+        <filter-name>TempFilter</filter-name>
+        <filter-class>com.servlet.filter.TempFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>TempFilter</filter-name>
+        <url-pattern>/*</url-pattern> <!--  /* : 모든 요청에 대해서 -->
+    </filter-mapping>
 </web-app>
